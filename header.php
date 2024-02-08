@@ -1,9 +1,13 @@
+<?php session_start();
+ $id_session = session_id();
+// print("Session Id: ".$id);
+?>
 
 <!doctype html>
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title>ReSoC - Administration</title> 
+        <title><?= $titre ?? "accueil"?></title> 
         <meta name="author" content="Julien Falconnet">
         <link rel="stylesheet" href="style.css"/>
     </head>
@@ -23,6 +27,23 @@
                     <li><a href="followers.php?user_id=5">Mes suiveurs</a></li>
                     <li><a href="subscriptions.php?user_id=5">Mes abonnements</a></li>
                 </ul>
-
             </nav>
         </header>
+
+        <?php
+            $_session['alias'] = 'livai';
+            $_session['email']  = 'livai@test.org';
+                echo $_session['alias'];
+
+            if($id_session){
+                echo ' ID de session (récupéré via session_id()) : <br>'
+                .$id_session. '<br>';
+            }
+            echo '<br><br>';
+            if(isset($_COOKIE['PHPSESSID'])){
+                echo 'ID de session (récupéré via $_COOKIE) : <br>'
+                .$_COOKIE['PHPSESSID'];
+            }
+        ?>
+
+        

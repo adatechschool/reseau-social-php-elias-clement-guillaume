@@ -1,4 +1,7 @@
-<?php include "header.php"; ?>
+<?php 
+$titre = "subscription";
+include "header.php"; 
+?>
         <div id="wrapper">
             <aside>
                 <img src="user.jpg" alt="Portrait de l'utilisatrice"/>

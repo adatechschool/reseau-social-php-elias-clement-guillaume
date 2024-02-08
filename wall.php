@@ -1,4 +1,10 @@
-<?php include "header.php"; ?>
+<?php 
+$titre = "wall";
+include "header.php"; 
+?>
+
+
+
         <div id="wrapper">
             <?php
             /**
@@ -78,7 +84,6 @@
                         <footer>
                             <small> ♥ <?php echo $post["like_number"]?></small>
                             <a href=""><?php echo $post["taglist"] ?></a>,
-                            
                         </footer>
                     </article>
                 <?php } ?>

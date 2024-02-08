@@ -1,5 +1,9 @@
-<?php include "header.php";?>
+<?php 
+$titre = "admin";
+include "header.php";
+?>
 
+    
         <?php
         /**
          * Etape 1: Ouvrir une connexion avec la base de donnée.

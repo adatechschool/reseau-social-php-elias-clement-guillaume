@@ -1,4 +1,7 @@
-<?php include "header.php";?>
+<?php 
+$titre = "settings";
+include "header.php";
+?>
         <div id="wrapper" class='profile'>
 
 

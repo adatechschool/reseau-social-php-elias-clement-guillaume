@@ -1,4 +1,7 @@
-<?php include "header.php";?>
+<?php 
+$titre = "flux";
+include "header.php";
+?>
         <div id="wrapper">
             <?php
             /**

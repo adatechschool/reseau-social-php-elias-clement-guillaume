@@ -1,4 +1,7 @@
-<?php include "header.php";?>
+<?php 
+$titre = "tags";
+include "header.php";
+?>
         <div id="wrapper">
             <?php
             /**
