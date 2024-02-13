@@ -1,6 +1,7 @@
 <?php 
 $titre = "news";
-include "header.php";?>
+include "header.php";
+?>
  
         <div id="wrapper">
             <aside>

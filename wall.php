@@ -1,5 +1,7 @@
 <?php 
 $titre = "wall";
+$user_Id = intval($_GET['user_id']);
+$_USER = $user_Id;
 include "header.php"; 
 ?>
 
@@ -14,7 +16,7 @@ include "header.php";
              * Documentation : https://www.php.net/manual/fr/reserved.variables.get.php
              * ... mais en résumé c'est une manière de passer des informations à la page en ajoutant des choses dans l'url
              */
-            $userId =intval($_GET['user_id']);
+            $userId = intval($_GET['user_id']);
             ?>
             <?php
             /**
@@ -28,7 +30,7 @@ include "header.php";
                 /**
                  * Etape 3: récupérer le nom de l'utilisateur
                  */                
-                $laQuestionEnSql = "SELECT * FROM users WHERE id= '$userId' ";
+                $laQuestionEnSql = "SELECT * FROM users WHERE id= '$userId ' ";
                 $lesInformations = $mysqli->query($laQuestionEnSql);
                 $user = $lesInformations->fetch_assoc();
                 //@todo: afficher le résultat de la ligne ci dessous, remplacer XXX par l'alias et effacer la ligne ci-dessous

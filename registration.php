@@ -1,6 +1,8 @@
 <?php 
 $titre = "registration";
+$_USER = "user_id";
 include "header.php"; 
+
 ?>
 
         <div id="wrapper" >
