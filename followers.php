@@ -36,7 +36,7 @@
                     <article>
                         <img src="user.jpg" alt="blason"/>
                         <h3><?php echo $follower['alias']?></h3>
-                        <p>id:<?php echo $follower['id']?></p>
+                        <p>id:<?php echo $follower['id']?></p> 
                     </article>
                     <?php
                 }

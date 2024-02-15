@@ -17,23 +17,23 @@
             <img src="resoc.jpg" alt="Logo de notre réseau social"/>
             <nav id="menu">
                 <a href="news.php">Actualités</a>
-                <a href="wall.php?user_id=<?php  echo $_USER?>">Mur</a>
-                <a href="feed.php?user_id=<?php echo $_USER?>">Flux</a>
+                <a href="wall.php?user_id=<?php echo $_USER['user_id']?>">Mur</a>
+                <a href="feed.php?user_id=<?php echo $_USER['user_id']?>">Flux</a>
                 <a href="tags.php?tag_id=1">Mots-clés</a>
             </nav>
             <nav id="user">
                 <a href="#">Profil</a>
                 <ul>
-                    <li><a href="settings.php?user_id=<?php $_USER?>">Paramètres</a></li>
-                    <li><a href="followers.php?user_id=<?php $_USER?>">Mes suiveurs</a></li>
-                    <li><a href="subscriptions.php?user_id=<?php $_USER?>">Mes abonnements</a></li>
+                    <li><a href="settings.php?user_id=<?php $_USER['user_id']?>">Paramètres</a></li>
+                    <li><a href="followers.php?user_id=<?php $_USER['user_id']?>">Mes suiveurs</a></li>
+                    <li><a href="subscriptions.php?user_id=<?php $_USER['user_id']?>">Mes abonnements</a></li>
                 </ul>
             </nav>
         </header>
-        <?php $_USER = ""?>
+        <?php $_USER = "user_id"?>
        
     <?php   
-           /*
+/*
      
             $_session['alias'] = 'livai';
             $_session['email']  = 'livai@test.org';
